@@ -1,6 +1,7 @@
 package alura.forumhub.domain.curso;
 
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -22,4 +23,8 @@ public class Curso {
     @Enumerated(EnumType.STRING)
     private CategoriaCurso categoriaCurso;
 
+    public Curso(@Valid DadosCriarCurso dados) {
+        this.nome = dados.nome();
+        this.categoriaCurso = dados.categoriaCurso();
+    }
 }

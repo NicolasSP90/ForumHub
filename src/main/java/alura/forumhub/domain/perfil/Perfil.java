@@ -2,6 +2,7 @@ package alura.forumhub.domain.perfil;
 
 import alura.forumhub.domain.usuario.Usuario;
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -29,4 +30,9 @@ public class Perfil {
             joinColumns = @JoinColumn(name = "perfil_id"),
             inverseJoinColumns = @JoinColumn(name = "usuario_id"))
     private List<Usuario> usuarios;
+
+    public Perfil(@Valid DadosCriarPerfil dados) {
+        this.nome = dados.nome();
+
+    }
 }

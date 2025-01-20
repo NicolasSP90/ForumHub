@@ -3,14 +3,17 @@ package alura.forumhub.domain.resposta;
 import alura.forumhub.domain.topico.Topico;
 import alura.forumhub.domain.usuario.Usuario;
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "respostas")
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -33,4 +36,11 @@ public class Resposta {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
+
+    public Resposta(@Valid DadosCriarResposta dados) {
+        this.mensagem = dados.mensagem();
+        this.topico = dados.topico();
+        this.dataCriacao = dados.dataCriacao();
+        this.usuario = dados.usuario();
+    }
 }

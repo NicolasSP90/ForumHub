@@ -16,8 +16,5 @@ public class GerenciarTopico {
         topicoRepository.save(topico);
 
         return new DetalhesCriarTopico(topico);
-
-
-
-    };
+    }
 }
