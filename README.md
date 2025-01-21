@@ -42,6 +42,6 @@ INSERT INTO alura_challenge.cursos (nome, categoria)
 VALUES 
 	('Java e Orientação a Objetos', 'BACK_END'),
 	('Java e Spring Framework', 'FULLSTACK'),
-	('Iniciante em Programação', 'FRONTEND');
+	('Iniciante em Programação', 'FRONT_END');
 ```
 
