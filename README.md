@@ -58,3 +58,7 @@ uma vez que o projeto está rodando a documentação pode ser acessada em (AMBIE
 * Endpoints Swagger - http://localhost:8080/v3/api-docs
 
 Detalhes dos endpoints podem ser visualizados em [api-docs.json](swagger/api-docs.json)
+
+## TODO LIST (Futuro)
+[ ] Permissões e hierarquia
+[ ] Implementação das demais tabelas
