@@ -1,0 +1,1011 @@
+{
+	"info": {
+		"_postman_id": "f233bb58-d66d-4ce3-8142-d558a78c025c",
+		"name": "ForumHub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32761453"
+	},
+	"item": [
+		{
+			"name": "Login (ADM) + Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"DBA@forumhub.com\",\r\n  \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTE5NH0.y5ZLzvQ9BqiNhPFD68m6yH7TP3fy00LwIybswISm-4U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\":\"Título 1\",\r\n  \"mensagem\":\"Mensagem do título1\",\r\n  \"data_criacao\":\"2025-01-20T09:15\",\r\n  \"status\":\"ABERTO\",\r\n  \"usuario\":\"1\",\r\n  \"categoria_curso\": \"BACK_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTE5NH0.y5ZLzvQ9BqiNhPFD68m6yH7TP3fy00LwIybswISm-4U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 2\",\r\n\"mensagem\":\"Mensagem do título2\",\r\n\"data_criacao\":\"2025-01-13T09:15\",\r\n\"status\":\"ABERTO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"BACK_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 3\",\r\n\"mensagem\":\"Mensagem do título3\",\r\n\"data_criacao\":\"2025-01-12T09:15\",\r\n\"status\":\"ABERTO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"FULLSTACK\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 4\",\r\n\"mensagem\":\"Mensagem do título4\",\r\n\"data_criacao\":\"2025-01-11T09:15\",\r\n\"status\":\"ABERTO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"BACK_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos -  5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 5\",\r\n\"mensagem\":\"Mensagem do título5\",\r\n\"data_criacao\":\"2025-01-21T09:15\",\r\n\"status\":\"ABERTO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"BACK_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 6",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 6\",\r\n\"mensagem\":\"Mensagem do título6\",\r\n\"data_criacao\":\"2025-01-19T09:15\",\r\n\"status\":\"ABERTO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"BACK_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 7",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 7\",\r\n\"mensagem\":\"Mensagem do título7\",\r\n\"data_criacao\":\"2025-01-20T21:15\",\r\n\"status\":\"ABERTO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"FRONT_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 8",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 8\",\r\n\"mensagem\":\"Mensagem do título8\",\r\n\"data_criacao\":\"2025-01-01T09:15\",\r\n\"status\":\"ABERTO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"FULLSTACK\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 9",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 9\",\r\n\"mensagem\":\"Mensagem do título9\",\r\n\"data_criacao\":\"2025-01-05T09:15\",\r\n\"status\":\"FECHADO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"FRONT_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 10",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 10\",\r\n\"mensagem\":\"Mensagem do título10\",\r\n\"data_criacao\":\"2025-01-20T09:15\",\r\n\"status\":\"FECHADO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"FRONT_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 11",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 11\",\r\n\"mensagem\":\"Mensagem do título11\",\r\n\"data_criacao\":\"2025-01-20T08:15\",\r\n\"status\":\"DESATIVADO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"FULLSTACK\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 12",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 12\",\r\n\"mensagem\":\"Mensagem do título12\",\r\n\"data_criacao\":\"2025-01-18T09:15\",\r\n\"status\":\"DESATIVADO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"FRONT_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação Tópicos - 13",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titulo\":\"Título 13\",\r\n\"mensagem\":\"Mensagem do título13\",\r\n\"data_criacao\":\"2025-01-21T15:00\",\r\n\"status\":\"FECHADO\",\r\n\"usuario\":\"1\",\r\n\"categoria_curso\": \"BACK_END\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Tópicos - páginas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos?page=0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retornar Tópico - ABERTO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retornar Tópico - FECHADO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retornar Tópico - DESATIVADO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retornar Tópico - INEXISTENTE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ4OTY5MX0.EWnd6zTcHvSzxhalIe31UqJWc1WoEPZ8ntuN9XsoEck",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/999",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Tópico 13 - Título e Mensagem",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"13\",\r\n  \"titulo\":\"Título 13 - Editado\",\r\n  \"mensagem\":  \"Mensagem do título13 - Editada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Tópico 8 - Titulo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"8\",\r\n  \"titulo\":\"Título 8 - Editado\",\r\n  \"mensagem\":  \"Mensagem do título8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Tópico 9 - Mensagem",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"9\",\r\n  \"titulo\":\"Título 9\",\r\n  \"mensagem\":  \"Mensagem do título9 - Editada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Tópico 11 - DESATIVADO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"11\",\r\n  \"titulo\":\"NÃO PODE ALTERAR\",\r\n  \"mensagem\":\"NÃO PODE ALTERAR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Tópico INEXISTENTE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"999\",\r\n  \"titulo\":\"NÃO PODE ALTERAR\",\r\n  \"mensagem\":\"NÃO PODE ALTERAR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topicos/999",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Abrir Tópico 11",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/11/abrir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"11",
+						"abrir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fechar Tópico 11",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/11/fechar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"11",
+						"fechar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Desativar Tópico 11",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzQ5Njk3Nn0.dKmDVAO1BhGEziKqpaxpGYjOWs7ljM5Ra80ITIcm8Zg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/11/desativar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"11",
+						"desativar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Tópico 13",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzUwMDQ0M30.LqzTv_oI_8LIRP_WfUInrVKh25Z1IK0ZoBgiM3FSjPk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/13/deletar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"13",
+						"deletar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Tópico INEXISTENTE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJEQkFAZm9ydW1odWIuY29tIiwiaWQiOjEsImV4cCI6MTczNzUwMDQ0M30.LqzTv_oI_8LIRP_WfUInrVKh25Z1IK0ZoBgiM3FSjPk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/topicos/999/deletar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"999",
+						"deletar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
