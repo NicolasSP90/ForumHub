@@ -31,17 +31,30 @@ Para o desafio Alura, será focado no CRUD relacionado a Tópicos. Para isso foi
 
 ```
 INSERT INTO usuarios (nome, email, senha, admin, ativo)
-VALUES 
-    ('DBA', 'DBA@forumhub.com', '123', 1, 1);
+VALUES
+('DBA', 'DBA@forumhub.com', '$2a$12$9UmbuOR5GjdkiDba8ovrAu4.WqKrXKKWhLNXDq1tboSLNra3qdLr.', 1, 1);
 ```
 
 Além disso foram preenchidos valores nas demais tabelas para garantir a criação de diversas instancias de tópicos.
 
 ```
 INSERT INTO alura_challenge.cursos (nome, categoria)
-VALUES 
-	('Java e Orientação a Objetos', 'BACK_END'),
-	('Java e Spring Framework', 'FULLSTACK'),
-	('Iniciante em Programação', 'FRONT_END');
+VALUES
+('Java e Orientação a Objetos', 'BACK_END'),
+('Java e Spring Framework', 'FULLSTACK'),
+('Iniciante em Programação', 'FRONT_END');
 ```
 
+Uma vez conectado, foram realizadas requisitoes post até completar um número suficiente de dados para testar a paginação. Verificar [requisicoes_postman](postman/requisicoes_postman.json)
+
+Além do CRUD, algumas regras foram adicionadas para os tópicos - (implementação futura. Não fazem parte do desafio alura):
+ABERTO - qualquer um pode continuar postando
+FECHADO - Aberto para leitura mas não para postagem
+DESATIVADO - Exclusão lógica. Não podem ser acessados.
+
+## Swagger
+uma vez que o projeto está rodando a documentação pode ser acessada em (AMBIENTE LOCAL):
+* Requisições Swagger - http://localhost:8080/swagger-ui/index.html#/
+* Endpoints Swagger - http://localhost:8080/v3/api-docs
+
+Detalhes dos endpoints podem ser visualizados em [api-docs.json](swagger/api-docs.json)

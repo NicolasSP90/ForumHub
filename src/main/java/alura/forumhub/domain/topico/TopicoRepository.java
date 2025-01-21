@@ -19,4 +19,7 @@ public interface TopicoRepository extends JpaRepository<Topico, Long> {
 
     @Query("SELECT t FROM Topico t WHERE t.status <> 'DESATIVADO' ORDER BY t.dataCriacao ASC")
     Page<Topico> topicosAbertoFechado(Pageable pageable);
+
+    @Query("SELECT t FROM Topico t WHERE t.id = :id")
+    Topico retornaTopico(Long id);
 }

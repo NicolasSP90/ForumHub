@@ -4,6 +4,7 @@ import alura.forumhub.domain.curso.Curso;
 import alura.forumhub.domain.resposta.Resposta;
 import alura.forumhub.domain.usuario.Usuario;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -54,4 +55,14 @@ public class Topico {
         this.usuario = usuario;
         this.curso = curso;
     }
+
+    public void atualizarTitulo(String titulo) { this.titulo = titulo; };
+
+    public void atualizarMensagem(String mensagem) { this.mensagem = mensagem; };
+
+    public void abrirTopico() { this.status = StatusTopico.ABERTO; };
+
+    public void fecharTopico() { this.status = StatusTopico.FECHADO; };
+
+    public void desativarTopico() { this.status = StatusTopico.DESATIVADO; };
 }

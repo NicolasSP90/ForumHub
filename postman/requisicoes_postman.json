@@ -1,0 +1,116 @@
+{
+"titulo":"Título 1",
+"mensagem":"Mensagem do título1",
+"data_criacao":"2025-01-20T09:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "BACK_END"
+}
+
+{
+"titulo":"Título 2",
+"mensagem":"Mensagem do título2",
+"data_criacao":"2025-01-13T09:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "BACK_END"
+}
+
+{
+"titulo":"Título 3",
+"mensagem":"Mensagem do título3",
+"data_criacao":"2025-01-12T09:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "FULLSTACK"
+}
+
+{
+"titulo":"Título 4",
+"mensagem":"Mensagem do título4",
+"data_criacao":"2025-01-11T09:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "BACK_END"
+}
+
+{
+"titulo":"Título 5",
+"mensagem":"Mensagem do título5",
+"data_criacao":"2025-01-21T09:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "BACK_END"
+}
+
+{
+"titulo":"Título 6",
+"mensagem":"Mensagem do título6",
+"data_criacao":"2025-01-19T09:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "BACK_END"
+}
+
+{
+"titulo":"Título 7",
+"mensagem":"Mensagem do título7",
+"data_criacao":"2025-01-20T21:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "FRONT_END"
+}
+
+{
+"titulo":"Título 8",
+"mensagem":"Mensagem do título8",
+"data_criacao":"2025-01-01T09:15",
+"status":"ABERTO",
+"usuario":"1",
+"categoria_curso": "FULLSTACK"
+}
+
+{
+"titulo":"Título 9",
+"mensagem":"Mensagem do título9",
+"data_criacao":"2025-01-05T09:15",
+"status":"FECHADO",
+"usuario":"1",
+"categoria_curso": "FRONT_END"
+}
+
+{
+"titulo":"Título 10",
+"mensagem":"Mensagem do título10",
+"data_criacao":"2025-01-20T09:15",
+"status":"FECHADO",
+"usuario":"1",
+"categoria_curso": "FRONT_END"
+}
+
+{
+"titulo":"Título 11",
+"mensagem":"Mensagem do título11",
+"data_criacao":"2025-01-20T08:15",
+"status":"DESATIVADO",
+"usuario":"1",
+"categoria_curso": "FULLSTACK"
+}
+
+{
+"titulo":"Título 12",
+"mensagem":"Mensagem do título12",
+"data_criacao":"2025-01-18T09:15",
+"status":"DESATIVADO",
+"usuario":"1",
+"categoria_curso": "FRONT_END"
+}
+
+{
+"titulo":"Título 13",
+"mensagem":"Mensagem do título13",
+"data_criacao":"2025-01-21T15:00",
+"status":"FECHADO",
+"usuario":"1",
+"categoria_curso": "BACK_END"
+}
