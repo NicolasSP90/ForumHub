@@ -1,7 +1,8 @@
 package alura.forumhub.controller;
 
 import alura.forumhub.domain.resposta.DadosCriarResposta;
-import alura.forumhub.domain.resposta.GerenciarResposta;
+import alura.forumhub.gerenciadores.GerenciarResposta;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("respostas")
+@RequestMapping("/respostas")
+@SecurityRequirement(name = "bearer-key")
 public class ControllerResposta {
 
     @Autowired

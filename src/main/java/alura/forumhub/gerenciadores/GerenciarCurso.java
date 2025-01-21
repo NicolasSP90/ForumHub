@@ -1,5 +1,9 @@
-package alura.forumhub.domain.curso;
+package alura.forumhub.gerenciadores;
 
+import alura.forumhub.domain.curso.Curso;
+import alura.forumhub.domain.curso.CursoRepository;
+import alura.forumhub.domain.curso.DadosCriarCurso;
+import alura.forumhub.domain.curso.DetalhesCriarCurso;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

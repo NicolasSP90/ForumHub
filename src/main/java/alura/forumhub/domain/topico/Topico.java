@@ -4,12 +4,15 @@ import alura.forumhub.domain.curso.Curso;
 import alura.forumhub.domain.resposta.Resposta;
 import alura.forumhub.domain.usuario.Usuario;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -30,6 +33,8 @@ public class Topico {
     @Column(name = "data_criacao")
     private LocalDateTime dataCriacao;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status")
     private StatusTopico status;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -43,12 +48,14 @@ public class Topico {
     @OneToMany(fetch = FetchType.LAZY)
     private List<Resposta> respostas;
 
-    public Topico(DadosCriarTopico dados){
+    public Topico(DadosCriarTopico dados, Usuario usuario, Curso curso) {
+        this.id = null;
         this.titulo = dados.titulo();
         this.mensagem = dados.mensagem();
         this.dataCriacao = dados.dataCriacao();
         this.status = dados.status();
-        this.usuario = dados.usuario();
-        this.curso = dados.curso();
+        this.usuario = usuario;
+        this.curso = curso;
+        this.respostas = new ArrayList<>();
     }
 }

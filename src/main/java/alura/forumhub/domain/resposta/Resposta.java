@@ -37,10 +37,11 @@ public class Resposta {
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
-    public Resposta(@Valid DadosCriarResposta dados) {
+    public Resposta(@Valid DadosCriarResposta dados, Topico topico, Usuario usuario) {
+        this.id = null;
         this.mensagem = dados.mensagem();
-        this.topico = dados.topico();
+        this.topico = topico;
         this.dataCriacao = dados.dataCriacao();
-        this.usuario = dados.usuario();
+        this.usuario = usuario;
     }
 }

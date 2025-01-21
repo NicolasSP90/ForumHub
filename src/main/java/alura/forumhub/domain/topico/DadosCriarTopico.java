@@ -1,7 +1,6 @@
 package alura.forumhub.domain.topico;
 
-import alura.forumhub.domain.curso.Curso;
-import alura.forumhub.domain.usuario.Usuario;
+import alura.forumhub.domain.curso.CategoriaCurso;
 import com.fasterxml.jackson.annotation.JsonAlias;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -19,11 +18,11 @@ public record DadosCriarTopico(
         @JsonAlias("data_criacao") LocalDateTime dataCriacao,
 
         @NotNull
-        StatusTopico status,
+        @JsonAlias("status") StatusTopico status,
 
         @NotNull
-        Usuario usuario,
+        @JsonAlias("usuario") Long idUsuario,
 
         @NotNull
-        Curso curso ) {
+        @JsonAlias("categoria_curso") CategoriaCurso categoria ) {
 }

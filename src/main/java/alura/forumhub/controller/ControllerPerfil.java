@@ -1,7 +1,8 @@
 package alura.forumhub.controller;
 
 import alura.forumhub.domain.perfil.DadosCriarPerfil;
-import alura.forumhub.domain.perfil.GerenciarPerfil;
+import alura.forumhub.gerenciadores.GerenciarPerfil;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("perfis")
+@RequestMapping("/perfis")
+@SecurityRequirement(name = "bearer-key")
 public class ControllerPerfil {
 
     @Autowired

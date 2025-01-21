@@ -13,12 +13,12 @@ public record DadosCriarResposta(
         String mensagem,
 
         @NotNull
-        Topico topico,
+        Long idTopico,
 
         @NotNull
         @JsonAlias("data_criacao") LocalDateTime dataCriacao,
 
         @NotNull
-        Usuario usuario) {
+        Long idUsuario) {
 
 }
